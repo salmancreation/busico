@@ -1,24 +1,21 @@
-import logo from './logo.svg';
+import React from 'react';
+import ReactDOM from 'react-dom';
+import {BrowserRouter as Router, Route} from 'react-router-dom';  
+import HomeOne from './Components/HomeOne';
+
 import './App.css';
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          This is Busico React Template for Envato.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div className="main-wrapper">
+        <Router>
+            <Route exact path='/' render={props => (
+                <HomeOne />
+            )} />
+            
+        </Router>
     </div>
+
   );
 }
 
