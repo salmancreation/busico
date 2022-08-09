@@ -11124,3 +11124,36 @@ header .header-top-bar .top-social-icons a:hover {
 .footer-4 .footer-social a:hover {
   color: #FFBB00;
 }
+
+
+.hero-wrapper.hero-1 .swiper-button-next,
+.hero-wrapper.hero-1 .swiper-button-prev {
+  position: absolute;
+  /* right: 120px; */
+  top: 97%;
+  padding: 18px 31px;
+  line-height: 1;
+  text-transform: uppercase;
+  background-color: #fff;
+  color: #001659;
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: 40%;
+}
+
+.hero-wrapper.hero-1 .swiper-button-next {
+  right: 0px !important;
+  background-image: url('../img/arrow-left.png');
+  transform: rotate(180deg);
+}
+
+
+.hero-wrapper.hero-1 .swiper-button-prev {
+  left: calc(100% - 123px);
+  right: 80px !important;
+  background-image: url('../img/arrow-left.png');
+
+}
+
+.hero-wrapper.hero-1 .swiper-button-prev::after, .hero-wrapper.hero-1 .swiper-button-next::after {
+display: none;}
