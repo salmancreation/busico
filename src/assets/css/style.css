@@ -11157,3 +11157,33 @@ header .header-top-bar .top-social-icons a:hover {
 
 .hero-wrapper.hero-1 .swiper-button-prev::after, .hero-wrapper.hero-1 .swiper-button-next::after {
 display: none;}
+
+
+.testimonial-carousel-wrapper .swiper-button-next, .swiper-button-prev {
+    padding: 30px 15px;
+    background: #FF5E14;
+    font-size: 20px;
+    color: #fff;
+}
+
+.testimonial-carousel-wrapper .swiper-button-next::after, .swiper-button-prev::after {
+  font-size: 20px;
+}
+
+.testimonial-carousel-wrapper .swiper-button-next {
+  right: 0;
+}
+
+.testimonial-carousel-wrapper .swiper-button-prev {
+  left: 0;
+}
+
+.testimonial-carousel-wrapper .swiper {
+  /* overflow: unset; */
+}
+
+@media (max-width: 500px) {
+  .testimonial-carousel-wrapper .swiper-button-next, .swiper-button-prev {
+      display: none;
+  }
+}
