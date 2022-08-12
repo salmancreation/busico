@@ -2365,6 +2365,8 @@ header .side-menu-toggle {
   font-size: 36px;
   line-height: 1;
   color: #001659 !important;
+  cursor: pointer;
+  margin-left: 25px;
 }
 
 header .side-menu-toggle:hover {
@@ -11130,7 +11132,7 @@ header .header-top-bar .top-social-icons a:hover {
 .hero-wrapper.hero-1 .swiper-button-prev {
   position: absolute;
   /* right: 120px; */
-  top: 97%;
+  top: 98%;
   padding: 18px 31px;
   line-height: 1;
   text-transform: uppercase;
@@ -11150,7 +11152,6 @@ header .header-top-bar .top-social-icons a:hover {
 
 .hero-wrapper.hero-1 .swiper-button-prev {
   left: calc(100% - 123px);
-  right: 80px !important;
   background-image: url('../img/arrow-left.png');
 
 }
@@ -11159,12 +11160,18 @@ header .header-top-bar .top-social-icons a:hover {
 display: none;}
 
 
-.testimonial-carousel-wrapper .swiper-button-next, .swiper-button-prev {
+.testimonial-carousel-wrapper .swiper {
+  position: relative;
+}
+
+
+.testimonial-carousel-wrapper .swiper-button-next,.testimonial-carousel-wrapper .swiper-button-prev {
     padding: 30px 15px;
     background: #FF5E14;
     font-size: 20px;
     color: #fff;
 }
+
 
 .testimonial-carousel-wrapper .swiper-button-next::after, .swiper-button-prev::after {
   font-size: 20px;
@@ -11178,12 +11185,48 @@ display: none;}
   left: 0;
 }
 
-.testimonial-carousel-wrapper .swiper {
-  /* overflow: unset; */
+.scroll-btn-wrapper {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  overflow-x: hidden;
+  z-index: 11111;
+
+}
+
+.scroll-btn-wrapper > button {
+  border: none;
+  width: 40px;
+  height: 40px;
+  background-color: #001659;
+  color: #fff;
+  border-radius: 50%;
+  transition: all 0.3s;
+  font-size: 20px;
+}
+
+.scroll-btn-wrapper > button:hover {
+  background-color: #FF5E14;
+}
+
+.scroll-btn-wrapper .visible {
+  opacity: 1;
+  display: block;
+  color: #fff;
+  transition: all 0.3s ease-in-out;
+  transform: scale(1);
+}
+
+.scroll-btn-wrapper .invisible {
+  opacity: 0;
+  transform: scale(.5);
 }
 
 @media (max-width: 500px) {
-  .testimonial-carousel-wrapper .swiper-button-next, .swiper-button-prev {
+  .testimonial-carousel-wrapper .swiper-button-next, .testimonial-carousel-wrapper .swiper-button-prev {
       display: none;
   }
+
 }
+
+
