@@ -1,7 +1,7 @@
 import { Link } from "react-router-dom";
 import FooterOneCopyrights from "./FooterOneCopyrights";
-import footerLogo from '../../assets/img/footer-logo.png';
 import { useState } from "react";
+import FooterCta from "./FooterCta";
 
 const FooterOne = () => {
     const [input, setInput] = useState('');
@@ -72,7 +72,7 @@ const FooterOne = () => {
                                     <div className="newsletter_box">
                                         <form action="#">
                                             <i className="fal fa-envelope"></i>
-                                            <input value={input} onChange={(e) => e.target.value} type="email" placeholder="Enter email address" required/>
+                                            <input value={input} onChange={(e) => setInput(e.target.value)} type="email" placeholder="Enter email address" required/>
                                             <button onClick={(e) => e.preventDefault()} className="submit-btn" type="submit">Subscribe Now <i className="fas fa-paper-plane"></i></button>
                                         </form>
                                         <p>Opening Hours : <b> Mon - Fri:  9:30 AM - 10 PM</b></p>
@@ -83,35 +83,8 @@ const FooterOne = () => {
                     </div>
                 </div>
 
-                <div className="footer-cta-wrapper">
-                    <div className="container">
-                        <div className="footer-cta-bg-wrapper">
-                            <div className="row justify-content-around align-items-center">
-                                <div className="col-lg-3 col-md-3 col-12">
-                                    <div className="footer-logo">
-                                        <a href="index.html">
-                                            <img src={footerLogo} alt="logo"/>
-                                        </a>
-                                    </div>
-                                </div>
-                                <div className="col-lg-4 col-md-5 ps-lg-0 offset-lg-1 col-12">
-                                    <div className="footer-middle-text mt-4 mb-4 mt-md-0 mb-md-0 text-white">
-                                        <p>Become an innovative entrepreneurial &#38; empowered company constantly creating mission to be a world className construction company.</p>
-                                    </div>
-                                </div>
-                                <div className="col-md-4 col-lg-4 col-12">
-                                    <div className="footer-social-icon ms-md-5 text-lg-md-end">
-                                        <a href="#"><i className="fab fa-facebook-f"></i></a>
-                                        <a href="#"><i className="fab fa-twitter"></i></a>
-                                        <a href="#"><i className="fab fa-instagram"></i></a>
-                                        <a href="#"><i className="fab fa-linkedin-in"></i></a>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
+                <FooterCta/>
+               
                 <div className="footer-bottom">
                     <FooterOneCopyrights/>
                 </div>

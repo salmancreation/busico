@@ -5,7 +5,7 @@ let currentYear = d.getFullYear();
 
 const FooterOneCopyrights = () => {
     return (
-        <>
+        <div className='footer-bottom'>
             <div className="container">
                 <div className="row align-items-center">
                     <div className="col-md-6 col-12 text-center text-md-start">
@@ -23,7 +23,7 @@ const FooterOneCopyrights = () => {
                     </div>
                 </div>
             </div>
-        </>
+        </div>
     )
 }   
 
