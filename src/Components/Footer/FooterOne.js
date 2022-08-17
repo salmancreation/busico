@@ -84,10 +84,7 @@ const FooterOne = () => {
                 </div>
 
                 <FooterCta/>
-               
-                <div className="footer-bottom">
-                    <FooterOneCopyrights/>
-                </div>
+                <FooterOneCopyrights/>
             </footer> 
         </>
     )
