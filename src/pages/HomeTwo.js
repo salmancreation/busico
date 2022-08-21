@@ -7,7 +7,8 @@ import FooterTwo from "../Components/Footer/FooterTwo";
 import BlogTwo from "../Components/Blog/BlogTwo";
 import TeamTwo from "../Components/Team/TeamTwo";
 import WhyUs from "../Components/About/WhyUs";
-import FunFact from "../Components/Funfact/FunFact";
+// import FunFact from "../Components/FunFact/FunFact";
+import FunFact from "../Components/FunFact/FunFact";
 import PortfolioTwo from "../Components/Portfolio/PortfolioTwo";
 import HeaderTwo from "../Components/Header/HeaderTwo";
 import HeroTwo from "../Components/Hero/HeroTwo";
@@ -15,7 +16,7 @@ import HeroTwo from "../Components/Hero/HeroTwo";
 const HomeTwo = () => {
     return (
         <>
-            <HeaderTwo/>
+        <HeaderTwo/>
            <HeroTwo/>
             <AboutTwo/>
             <ServicesTwo/>
