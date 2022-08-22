@@ -28,7 +28,7 @@ const NewsWrapper = () => {
                                     <div className="post-cat">
                                         <Link to="/news">BUILDING</Link>
                                     </div>
-                                    <h2><Link to="/newsdetails">Dharma Home Suites at Novia offers fully plain
+                                    <h2><Link to="/newsDetails">Dharma Home Suites at Novia offers fully plain
                                         furnished apartments to fit</Link></h2>
                                     <div className="post-meta">
                                         <span><i className="fal fa-comments"></i>35 Comments</span>
@@ -50,7 +50,7 @@ const NewsWrapper = () => {
                                 <div className="post-featured-thumb bg-cover" style={{backgroundImage: `url(${post1})`}}></div>
                                 <div className="post-content">
                                     <div className="post-cat">
-                                        <a href="#">CONSTRUCTION</a>
+                                        <Link to="#">CONSTRUCTION</Link>
                                     </div>
                                     <h2><Link to="/newsDetails">BUILDING REPAIR & CONSTRUCTION</Link></h2>
                                     <div className="post-meta">
@@ -77,9 +77,9 @@ const NewsWrapper = () => {
                                 </div>
                                 <div className="post-content">
                                     <div className="post-cat">
-                                        <a href="news.html">Engineering</a>
+                                        <Link to="/news">Engineering</Link>
                                     </div>
-                                    <h2><a href="news-details.html">Mechanical Engineering and Energy</a></h2>
+                                    <h2><Link to="/newsDetails">Mechanical Engineering and Energy</Link></h2>
                                     <div className="post-meta">
                                         <span><i className="fal fa-comments"></i>35 Comments</span>
                                         <span><i className="fal fa-calendar-alt"></i>12th May 2020</span>
@@ -100,7 +100,7 @@ const NewsWrapper = () => {
                                 <div className="post-featured-thumb bg-cover" style={{backgroundImage: `url(${post1})`}}></div>
                                 <div className="post-content">
                                     <div className="post-cat">
-                                        <a href="#">Interior Design</a>
+                                        <Link to="#">Interior Design</Link>
                                     </div>
                                     <h2><Link to="/newsDetails">best result of building and reputable company</Link></h2>
                                     <div className="post-meta">

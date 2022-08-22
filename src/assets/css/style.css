@@ -11280,3 +11280,7 @@ display: none;}
 
 }
 
+
+.instagram-gallery > img {
+  cursor: pointer;
+}

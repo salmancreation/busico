@@ -5,6 +5,8 @@ import gallery1 from '../../assets/img/blog/ip1.jpg';
 import tagsData from './tagsData';
 import categoriesData from './categoriesData';
 import feedsData from './feedsData';
+import { SRLWrapper } from 'simple-react-lightbox';
+
 
 const Sidebar = () => {
     const [search, setSearch] = useState('');
@@ -46,7 +48,7 @@ const Sidebar = () => {
                 <div className="popular-posts">
                     {
                         feedsData.map((data) => (
-                            <div className="single-post-item">
+                            <div className="single-post-item" key={data.id}>
                         <div className="thumb bg-cover" style={{backgroundImage: `url(${data.img})`}}></div>
                         <div className="post-content">
                             <h5><Link to={data.link}>{data.title}</Link></h5>
@@ -67,7 +69,7 @@ const Sidebar = () => {
                     <ul>
                         {
                             categoriesData.map((data) => (
-                                <li><Link to={data.link}>{data.name} <span>{data.number}</span></Link></li>
+                                <li key={data.id}><Link to={data.link}>{data.name} <span>{data.number}</span></Link></li>
 
                             ))
                         } 
@@ -90,10 +92,22 @@ const Sidebar = () => {
                 <div className="wid-title">
                     <h3>Instagram Feeds</h3>
                 </div>
-                <div className="instagram-gallery">
-                    <a href="assets/img/blog/ip1.jpg" className="single-photo-item bg-cover popup-gallery" style={{backgroundImage: `url(${gallery1})`}}>                                    
-                    </a>
-                </div>
+                <SRLWrapper>
+                    <div className="instagram-gallery">
+                        <img src={gallery1} className="single-photo-item bg-cover">                                    
+                        </img>
+                        <img src={gallery1} className="single-photo-item bg-cover">                                    
+                        </img>
+                        <img src={gallery1} className="single-photo-item bg-cover">                                    
+                        </img>
+                        <img src={gallery1} className="single-photo-item bg-cover">                                    
+                        </img>
+                        <img src={gallery1} className="single-photo-item bg-cover">                                    
+                        </img>
+                        <img src={gallery1} className="single-photo-item bg-cover">                                    
+                        </img>
+                    </div>
+                </SRLWrapper>
             </div>
             <div className="single-sidebar-widget">
                 <div className="wid-title">
@@ -103,7 +117,7 @@ const Sidebar = () => {
                        
                    {
                     tagsData.map((data) => (
-                        <Link to={data.link}>{data.label}</Link>  
+                        <Link key={data.id} to={data.link}>{data.label}</Link>  
                     ))
                    }
                 
