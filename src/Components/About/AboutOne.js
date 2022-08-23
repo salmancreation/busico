@@ -7,7 +7,7 @@ import 'react-modal-video/scss/modal-video.scss';
 import ModalVideo from 'react-modal-video';
 
 
-const AboutOne = () => {
+const AboutOne = ({pt}) => {
     const [isOpen, setOpen] = useState(false);
 
     return (
@@ -19,7 +19,7 @@ const AboutOne = () => {
             videoId="EZ9DrY43wtw"
             onClose={() => setOpen(false)}
         />
-        <section className="about-section section-padding pt-0">
+        <section className={pt ? 'about-section section-padding' : 'about-section section-padding pt-0'}>
         <div className="container">
             <div className="row">
                 <div className="col-xl-6 col-lg-5 col-12">
