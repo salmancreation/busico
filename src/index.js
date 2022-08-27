@@ -5,8 +5,6 @@ import reportWebVitals from './reportWebVitals';
 import { BrowserRouter } from "react-router-dom";
 import './assets/css/bootstrap.min.css';
 import "./assets/css/animate.css";
-import "./assets/css/owl.carousel.min.css";
-import "./assets/css/owl.theme.css";
 import "./assets/css/icons.css";
 import "./assets/css/style.css";
 import '../node_modules/bootstrap/dist/js/bootstrap'

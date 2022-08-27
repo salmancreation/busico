@@ -1,6 +1,7 @@
 import React from 'react'
 import { Link } from 'react-router-dom'
 import img1 from '../../assets/img/blog/post-inner.jpg';
+import img2 from '../../assets/img/blog/p1.jpg';
 import post1 from '../../assets/img/home2/s2.jpg';
 import post2 from '../../assets/img/home2/s2.jpg';
 import author1 from '../../assets/img/blog/author_img.jpg'
@@ -30,7 +31,7 @@ const Details = () => {
 
                                 <p>We have a proven record of best result of building and reputable company in the United States. Thousands of successful projects we are one of the most trusted construction companies. We have a proven record of best result of building and reputable company in the United States.</p>
                                 <p>Northern anchovy–bass yellowtail barracuda zander yellowfin grouper gurnard skipjack tuna shark burrowing goby eulachon wobbegong. Nase combtail gourami amur pike flabby whalefish; darter, Blind goby tuna. Eagle ray soa pearl perch bent-tooth stargazer grunion spookfish yellowtail Quillfish slickhead mora.  snake worm mackerel sockeye salmon banjo catfish toadfish sauger four-eyed fish</p>
-                                <img src="assets/img/blog/p1.jpg" alt=""/>
+                                <img src={img2} alt=""/>
                                 <h3>BUILDING REPAIR & CONSTRUCTION</h3>
                                 <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incidid unt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in repreh enderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>
                                 <blockquote>

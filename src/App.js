@@ -3,10 +3,17 @@ import { Routes, Route} from 'react-router-dom';
 import Preloader from './Components/Preloader';
 import ScrollTopBtn from './Components/ScrollTopBtn';
 import AboutPage from './pages/AboutPage';
+import ServicePage from './pages/ServicePage';
 import HomeOne from './pages/HomeOne';
 import HomeTwo from './pages/HomeTwo';
 import News from './pages/News';
 import NewsDetails from './pages/NewsDetails';
+import TeamPage from './pages/TeamPage';
+import FaqPage from './pages/FaqPage';
+import PricingPage from './pages/PricingPage';
+import ServiceDetails from './pages/ServiceDetails';
+// import contactPage from './pages/contactPage';
+import HomeThree from './pages/HomeThree';
 
 
 function App() {
@@ -27,8 +34,14 @@ function App() {
       <Routes>
         <Route path="/" element={<HomeOne />} />
         <Route path="/homeTwo" element={<HomeTwo />} />
-        <Route path="/aboutTwo" element={<AboutPage />} />
+        <Route path="/homeThree" element={<HomeThree />} />
+        <Route path="/about" element={<AboutPage />} />
+        <Route path="/services" element={<ServicePage />} />
+        <Route path="/team" element={<TeamPage />} />
+        <Route path="/faq" element={<FaqPage />} />
+        <Route path="/pricing" element={<PricingPage />} />
         <Route path="/newsDetails" element={<NewsDetails />} />
+        <Route path="/servicesDetails" element={<ServiceDetails />} />
         <Route path="/news" element={<News />} />
       </Routes>
     </>

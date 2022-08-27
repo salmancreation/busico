@@ -31,21 +31,16 @@ const HeaderTwo = () => {
                                 <li><Link to="/">homepage 1</Link></li>
                                 <li><Link to="/homeTwo">homepage 2</Link></li>
                                 <li><Link to="/homeThree">homepage 3</Link></li>
-                                <li><Link to="/homeFour">homepage 4</Link></li>
                             </ul>
                         </li>
+                        <li><Link to="/about">about</Link></li>
                         <li><Link to="/services">Services</Link></li>
-                        <li><Link to="/projects">portfolio</Link></li>
                         <li><Link to="#">Pages <i className="fal fa-plus"></i></Link>
                             <ul className="sub-menu">
-                                <li><Link to="/aboutTwo">about 2</Link></li>
                                 <li><Link to="/team">team</Link></li>
                                 <li><Link to="/faq">faq</Link></li>
                                 <li><Link to="/projects">projects</Link></li>
-                                <li><Link to="/projectsTwo">projects 2</Link></li>
                                 <li><Link to="/pricing">Pricing</Link></li>
-                                <li><Link to="/pricingTwo">Pricing 2</Link></li>
-                                <li><Link to="/servicesTwo">services 2</Link></li>
                             </ul>
                         </li>
                         <li><Link to="/news">News</Link></li>

@@ -1,10 +1,10 @@
 import { useState } from "react";
 import { Link } from "react-router-dom";
-import mainLogo from '../../assets/img/logo.png';
+import mainLogo from '../../assets/img/home3/logo.png';
 import MobileMenu from "./MobileMenu";
 import OffsetMenu from "./OffsetMenu";
 
-const HeaderOne = () => {
+const HeaderThree = () => {
   const [search, setSearch] = useState(true);
   const [offset, setOffset] = useState(true)
   const [mobileMenu, setMobileMenu] = useState(true);
@@ -31,8 +31,8 @@ const HeaderOne = () => {
                     <img src={mainLogo} alt="logo"/>
                 </Link>
             </div>
-            <div className="header-right-area d-flex">
-                <div className="main-menu d-none d-xl-block">
+            <div className="header-right-area d-flex justify-content-between">
+                <div className="main-menu d-none d-xl-block me-xl-5">
                     <ul>
                         <li><a href="index.html">Home <i className="fal fa-plus"></i></a>
                             <ul className="sub-menu">
@@ -65,8 +65,7 @@ const HeaderOne = () => {
                     </ul>
                 </div>
                 <div className="header-right-elements d-flex align-items-center justify-content-between">
-                    <Link to="/contact" className="theme-btn d-none d-sm-block">Get Free Quote</Link>
-                    <span onClick={handleOffset} className="side-menu-toggle d-none d-xl-block"><i className="fal fa-bars"></i></span>
+                    <Link to="/contact" className="theme-btn style-3 d-none d-sm-block">Try Free Now</Link>
                     <div className="d-inline-block ms-4 d-xl-none">
                         <div className="mobile-nav-wrap">                    
                             <div id="hamburger" onClick={handleMobileMenu}>
@@ -85,4 +84,4 @@ const HeaderOne = () => {
   )
 }
 
-export default HeaderOne;
+export default HeaderThree;
