@@ -1,9 +1,8 @@
 import { Link } from "react-router-dom";
 
-const contactContents = () => {
+const ContactPageContents = () => {
 
     return (
-
         <div className="contact-us-wrapper section-padding">
             <div className="container">
                 <div className="row eq-height">
@@ -80,7 +79,7 @@ const contactContents = () => {
                             <h2>Live Chat</h2>
                             <p>You can contact us on chat and explain 
                             your problems</p>
-                            <Link to="/"><i className="flaticon-chatting" /> Live Chat to Executive</Link>
+                            <Link to="/about"><i className="flaticon-chatting" /> Live Chat to Executive</Link>
                         </div>
                     </div>
                 </div>
@@ -91,4 +90,4 @@ const contactContents = () => {
     )
 }
 
-export default contactContents;
+export default ContactPageContents;

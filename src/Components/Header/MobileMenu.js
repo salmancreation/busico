@@ -16,8 +16,8 @@ const MobileMenu = ({mobileMenu, handleMobileMenu}) => {
                         <li><Link to="/homeThree">homepage 3</Link></li>
                     </ul>
                 </li>
-                <li><a href="/about">about us</a></li>
-                <li><a href="/services">Services</a></li>
+                <li><Link to="/about">about us</Link></li>
+                <li><Link to="/services">Services</Link></li>
                 <li>
                     <a className="has-arrow" href="#">Pages</a>
                     <ul className="sub-menu">

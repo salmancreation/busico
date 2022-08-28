@@ -14,7 +14,7 @@ import PricingPage from './pages/PricingPage';
 import ServiceDetails from './pages/ServiceDetails';
 import HomeThree from './pages/HomeThree';
 import ProjectPage from './pages/ProjectPage';
-import contactPage from './pages/contactPage';
+import ContactPage from './pages/ContactPage';
 
 
 function App() {
@@ -40,7 +40,7 @@ function App() {
         <Route path="/services" element={<ServicePage />} />
         <Route path="/team" element={<TeamPage />} />
         <Route path="/faq" element={<FaqPage />} />
-        <Route path="/contact" element={<contactPage />} />
+        <Route path="/contact" element={<ContactPage />} />
         <Route path="/pricing" element={<PricingPage />} />
         <Route path="/newsDetails" element={<NewsDetails />} />
         <Route path="/servicesDetails" element={<ServiceDetails />} />
