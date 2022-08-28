@@ -1,8 +1,7 @@
 import { Link } from "react-router-dom";
-import contactForm from "./contactForm";
-
 
 const contactContents = () => {
+
     return (
 
         <div className="contact-us-wrapper section-padding">
@@ -11,7 +10,37 @@ const contactContents = () => {
                 <div className="col-lg-8 col-12">
                     <div className="contact-form"> 
                     <h2>Get in Touch</h2>                                                       
-                    <contactForm/>
+                    
+                    <form action="mail.php" method="POST" className="row" id="contact-form">
+                    <div className="col-md-6 col-12">
+                        <div className="single-personal-info">
+                        <input type="text" name="name" placeholder="Name" />                                         
+                        </div>
+                    </div>                            
+                    <div className="col-md-6 col-12">
+                        <div className="single-personal-info">
+                        <input type="email" name="email" placeholder="Email" />                                         
+                        </div>
+                    </div>
+                    <div className="col-md-6 col-12">
+                        <div className="single-personal-info">
+                        <input type="text" name="phone" placeholder="Number" />                                         
+                        </div>
+                    </div>                                      
+                    <div className="col-md-6 col-12">
+                        <div className="single-personal-info">
+                        <input type="text" name="subject" placeholder="Subject" />                                         
+                        </div>
+                    </div>                                      
+                    <div className="col-md-12 col-12">
+                        <div className="single-personal-info">
+                        <textarea name="message" placeholder="message" defaultValue={""} />                                        
+                        </div>
+                    </div>                                      
+                    <div className="col-md-12 col-12">
+                        <input className="submit-btn" type="submit" defaultValue="Submit Now" />
+                    </div>                                      
+                    </form>
                     <span className="form-message" />
                     </div>
                 </div>

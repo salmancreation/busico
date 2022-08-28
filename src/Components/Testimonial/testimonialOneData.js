@@ -1,7 +1,7 @@
 import {v4 as uuidv4} from 'uuid';
 import img1 from '../../assets/img/client/1.jpg';
 
-const testimonialOneData = [
+const TestimonialTwoData = [
     {
         id: uuidv4(),
         img: img1,
@@ -20,4 +20,4 @@ const testimonialOneData = [
     
 ]
 
-export default testimonialOneData;
+export default TestimonialTwoData;

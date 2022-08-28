@@ -12,8 +12,9 @@ import TeamPage from './pages/TeamPage';
 import FaqPage from './pages/FaqPage';
 import PricingPage from './pages/PricingPage';
 import ServiceDetails from './pages/ServiceDetails';
-// import contactPage from './pages/contactPage';
 import HomeThree from './pages/HomeThree';
+import ProjectPage from './pages/ProjectPage';
+import contactPage from './pages/contactPage';
 
 
 function App() {
@@ -39,10 +40,12 @@ function App() {
         <Route path="/services" element={<ServicePage />} />
         <Route path="/team" element={<TeamPage />} />
         <Route path="/faq" element={<FaqPage />} />
+        <Route path="/contact" element={<contactPage />} />
         <Route path="/pricing" element={<PricingPage />} />
         <Route path="/newsDetails" element={<NewsDetails />} />
         <Route path="/servicesDetails" element={<ServiceDetails />} />
         <Route path="/news" element={<News />} />
+        <Route path="/projects" element={<ProjectPage />} />
       </Routes>
     </>
     )

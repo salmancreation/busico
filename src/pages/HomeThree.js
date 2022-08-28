@@ -8,7 +8,9 @@ import CtaTwo from "../Components/Cta/CtaTwo";
 import TeamFour from "../Components/Team/TeamFour";
 import CoreFeaturesOne from "../Components/Features/CoreFeaturesOne";
 import PortfolioThree from "../Components/Portfolio/PortfolioThree";
-// import TestimonialOne from "../Components/Testimonial/TestimonialOne";
+import TestimonialTwo from "../Components/Testimonial/TestimonialTwo";
+import BlogThree from "../Components/Blog/BlogThree";
+import FooterForm from "../Components/Contact/FooterForm";
 
 
 const HomeThree = () => {
@@ -23,6 +25,9 @@ const HomeThree = () => {
             <TeamFour/>
             <CoreFeaturesOne/>
             <PortfolioThree/>
+            <TestimonialTwo/>
+            <BlogThree/>
+            <FooterForm/>
             <FooterThree/>
         </>
     )

@@ -5898,23 +5898,25 @@ header .header-top-bar .top-social-icons a:hover {
           transform: translateY(-50%);
 }
 
-.testimonial-carousel-list.style-2 .owl-nav div {
+.testimonial-carousel-list.swiper-button-prev, .testimonial-carousel-list.swiper-button-next {
   background-color: #FFBB00;
   border-color: #FFBB00;
   color: #161616;
 }
 
-.testimonial-carousel-list.style-2 .owl-nav div:hover {
+.testimonial-carousel-list.swiper-button-prev:hover, 
+.testimonial-carousel-list.swiper-button-next:hover {
   background-color: #161616;
   border-color: #161616;
   color: #fff;
 }
 
-.testimonial-carousel-list .owl-nav {
+.testimonial-carousel-list.swiper-button-prev,
+.testimonial-carousel-list.swiper-button-next {
   margin-top: 30px;
 }
 
-.testimonial-carousel-list .owl-nav div {
+.testimonial-carousel-list.swiper-button-prev, .testimonial-carousel-list.swiper-button-next {
   width: 45px;
   height: 45px;
   line-height: 45px;
@@ -5931,12 +5933,25 @@ header .header-top-bar .top-social-icons a:hover {
           box-sizing: border-box;
 }
 
-.testimonial-carousel-list .owl-nav div:hover {
+.testimonial-carousel-list.swiper-button-prev:hover,
+.testimonial-carousel-list.swiper-button-next:hover {
   background-color: #001659;
 }
 
-.testimonial-carousel-list .owl-nav div:first-child {
+.testimonial-carousel-list.swiper-button-prev:first-child {
   margin-right: 10px;
+}
+
+.testimonial-carousel-list .swiper-button-prev, .testimonial-carousel-list .swiper-button-next {
+    right: 60px !important;
+    left: auto;
+    top: 202px;
+    width: 12px;
+    height: 12px;
+}
+
+.testimonial-carousel-list .swiper-button-next {
+    right: 10px !important;
 }
 
 .project-info-header {
