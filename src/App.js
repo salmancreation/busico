@@ -13,6 +13,7 @@ import FaqPage from './pages/FaqPage';
 import PricingPage from './pages/PricingPage';
 import ServiceDetails from './pages/ServiceDetails';
 import HomeThree from './pages/HomeThree';
+import HomeFour from './pages/HomeFour';
 import ProjectPage from './pages/ProjectPage';
 import ContactPage from './pages/ContactPage';
 
@@ -36,6 +37,7 @@ function App() {
         <Route path="/" element={<HomeOne />} />
         <Route path="/homeTwo" element={<HomeTwo />} />
         <Route path="/homeThree" element={<HomeThree />} />
+        <Route path="/homeFour" element={<HomeFour />} />
         <Route path="/about" element={<AboutPage />} />
         <Route path="/services" element={<ServicePage />} />
         <Route path="/team" element={<TeamPage />} />

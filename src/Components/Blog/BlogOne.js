@@ -27,14 +27,14 @@ const BlogOne = () => {
                                         <div className="post-metabar d-flex justify-content-between align-items-center">
                                             <div className="post-author">
                                                 <div className="author-img bg-cover bg-center" style={{backgroundImage: `url(${blog.authorImg})`}}></div>
-                                                <a href="#">{blog.authorName}</a>
+                                                <Link to={blog.btnLink}>{blog.authorName}</Link>
                                             </div>
                                             <div className="post-date">
                                                 <i className="fal fa-calendar-alt"></i>
-                                                <a href="#">{blog.date}</a>
+                                                <Link to={blog.btnLink}>{blog.date}</Link>
                                             </div>
                                         </div>
-                                        <h3><a href="news-details.html">{blog.title}</a></h3>
+                                        <h3><Link to={blog.btnLink}>{blog.title}</Link></h3>
                                         <Link to={blog.btnLink} className="read-more-link">{blog.btnText}</Link>
                                     </div>
                                 </div>
