@@ -67,11 +67,11 @@ const HeaderFour = () => {
                 </div>
                 <div className="header-right-elements d-flex align-items-center justify-content-between">
                     <Link to="/contact" className="theme-btn style-4 d-none d-sm-block">Get Free Quote</Link>
-                    <span onClick={handleOffset} className="side-menu-toggle d-none d-xl-block"><i className="fal fa-bars"></i></span>
+                    <span onClick={handleOffset} className="side-menu-toggle text-white d-none d-xl-block"><i className="fal fa-bars"></i></span>
                     <div className="d-inline-block ms-4 d-xl-none">
                         <div className="mobile-nav-wrap">                    
-                            <div id="hamburger" onClick={handleMobileMenu}>
-                                <i className="fal fa-bars text-white"></i>
+                            <div id="hamburger" className='text-white' onClick={handleMobileMenu}>
+                                <i className="fal fa-bars"></i>
                             </div>
                             <MobileMenu mobileMenu={mobileMenu} handleMobileMenu={handleMobileMenu} />
                         </div>
