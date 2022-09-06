@@ -4,7 +4,7 @@ Template: BUSICO - Multipurpose Bootstrap 5 Template
 Author: RRDevs
 Author URI: https://themeforest.net/user/rrdevs
 Description: Multipurpose Bootstrap 5 Template
-Version: 1.2.0
+Version: 1.0
 */
 @import url("https://fonts.googleapis.com/css2?family=Exo+2:wght@300;400;500;600;700;800&family=Roboto:wght@300;400;500;700&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Oswald:wght@500;600;700&display=swap");
@@ -3890,10 +3890,10 @@ header .header-top-bar .top-social-icons a:hover {
   visibility: visible;
 }
 
-.agency-slider-active.owl-theme .owl-dots .owl-dot span {
+.agency-slider-active span.swiper-pagination-bullet {
   position: relative;
-  width: 20px;
-  height: 20px;
+  width: 16px;
+  height: 16px;
   border-radius: 50%;
   border: 1px solid #fff;
   background: transparent;
@@ -3901,21 +3901,8 @@ header .header-top-bar .top-social-icons a:hover {
   display: inline-block;
 }
 
-.agency-slider-active.owl-theme .owl-dots .owl-dot span::before {
-  position: absolute;
-  width: 6px;
-  height: 6px;
-  content: "";
-  background: #fff;
-  border-radius: 50%;
-  top: 50%;
-  left: 50%;
-  -webkit-transform: translate(-50%, -50%);
-          transform: translate(-50%, -50%);
-  opacity: 0;
-  visibility: hidden;
-  -webkit-transition: all .3s ease-in-out;
-  transition: all .3s ease-in-out;
+.agency-slider-active .swiper-pagination-bullet-active {
+    background: #fff;
 }
 
 .owl-carousel .animated-text {
