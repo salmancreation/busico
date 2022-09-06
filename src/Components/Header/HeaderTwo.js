@@ -31,6 +31,7 @@ const HeaderTwo = () => {
                                 <li><Link to="/">homepage 1</Link></li>
                                 <li><Link to="/homeTwo">homepage 2</Link></li>
                                 <li><Link to="/homeThree">homepage 3</Link></li>
+                                <li><Link to="/homeFour">homepage 4</Link></li>
                             </ul>
                         </li>
                         <li><Link to="/about">about</Link></li>

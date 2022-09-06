@@ -6840,41 +6840,19 @@ header .header-top-bar .top-social-icons a:hover {
   border-color: #FFBB00;
 }
 
-.portfolio-showcase-carousel-active.owl-theme .owl-dots {
-  margin-top: 60px !important;
-  margin-bottom: -10px;
-}
 
-.portfolio-showcase-carousel-active.owl-theme .owl-dots .owl-dot.active span::before, .portfolio-showcase-carousel-active.owl-theme .owl-dots .owl-dot:hover span::before {
-  opacity: 1;
-  visibility: visible;
-}
-
-.portfolio-showcase-carousel-active.owl-theme .owl-dots .owl-dot span {
+.portfolio-showcase-carousel-active span.swiper-pagination-bullet {
   position: relative;
-  width: 20px;
-  height: 20px;
+  width: 16px;
+  height: 16px;
   border-radius: 50%;
   border: 1px solid #eee;
   background: transparent;
   margin: 0px 7px;
 }
-
-.portfolio-showcase-carousel-active.owl-theme .owl-dots .owl-dot span::before {
-  position: absolute;
-  width: 6px;
-  height: 6px;
-  content: "";
-  background: #161616;
-  border-radius: 50%;
-  top: 50%;
-  left: 50%;
-  -webkit-transform: translate(-50%, -50%);
-          transform: translate(-50%, -50%);
-  opacity: 0;
-  visibility: hidden;
-  -webkit-transition: all .3s ease-in-out;
-  transition: all .3s ease-in-out;
+.portfolio-showcase-carousel-active span.swiper-pagination-bullet.swiper-pagination-bullet-active{
+  border: 1px solid #fff;
+  background: #fff;
 }
 
 .single-pricing-table {
@@ -8614,6 +8592,7 @@ header .header-top-bar .top-social-icons a:hover {
   font-size: 17px;
   font-weight: 500;
   text-transform: uppercase;
+  margin-bottom: 0;
 }
 
 .our-brand-wrapper {
@@ -11298,4 +11277,8 @@ display: none;}
 
 .instagram-gallery > img {
   cursor: pointer;
+}
+
+.CircularProgressbar {
+    width: 100px !important;
 }

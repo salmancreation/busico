@@ -34,11 +34,12 @@ const HeaderOne = () => {
             <div className="header-right-area d-flex">
                 <div className="main-menu d-none d-xl-block">
                     <ul>
-                        <li><a href="index.html">Home <i className="fal fa-plus"></i></a>
+                        <li><a href="#">Home <i className="fal fa-plus"></i></a>
                             <ul className="sub-menu">
                                 <li><Link to="/">homepage 1</Link></li>
                                 <li><Link to="/homeTwo">homepage 2</Link></li>
                                 <li><Link to="/homeThree">homepage 3</Link></li>
+                                <li><Link to="/homeFour">homepage 4</Link></li>
                             </ul>
                         </li>
                         <li><Link to="/about">about us</Link></li>

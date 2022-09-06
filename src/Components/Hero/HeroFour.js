@@ -4,16 +4,17 @@ import { EffectFade } from 'swiper';
 
 // Import Swiper styles
 import "swiper/css";
-import "swiper/css/navigation";
 import "swiper/css/pagination";
-import { Navigation } from "swiper";
 import { Link } from "react-router-dom";
 import 'swiper/css/effect-fade';
+
+// import required modules
+import { Pagination } from "swiper";
 
 const HeroFour = () => {
     return (
         <section className="agency-hero-wrapper hero-wrapper fix">
-            <Swiper className="agency-slider-active" pagination={true} modules={[Navigation, EffectFade]} effect={"fade"} loop>
+            <Swiper className="agency-slider-active" pagination={true} modules={[Pagination, EffectFade]} effect={"fade"} loop>
                 <SwiperSlide>
                     <div className="single-agency-slide bg-cover" style={{backgroundImage: `url(${slide1})`}}>
                         <div className="container">

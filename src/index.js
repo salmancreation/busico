@@ -10,10 +10,6 @@ import "./assets/css/style.css";
 import '../node_modules/bootstrap/dist/js/bootstrap'
 import SimpleReactLightbox from 'simple-react-lightbox';
 
-
-// const root = ReactDOM.createRoot(document.getElementById('root'));
-// root.render(<BrowserRouter><App /></BrowserRouter>);
-
 ReactDOM.render(
     <>
     <SimpleReactLightbox>

@@ -1,114 +1,49 @@
-/*
-Template: BUSICO - Multipurpose Bootstrap 5 Template
-Author: RRDevs
-*/
 
-(function($) {
-    "use strict";
+window.addEventListener('load', (event) => {
+    const preloader = document.getElementsByClassName("preloader");
+    preloader.classList.add("loaded");
+});
 
-    $(document).ready( function() {
-        
+setTimeout(function() {
+    preloader.classList.remove('loaded');
+}, 600);
 
-        // Sticky Menu
-        $(window).scroll(function() {
-            var Width = $(document).width();
+document.getElementsByClassName("side-menu-toggle offcanvas-btn").addEventListener("click", showMenu);
 
-            if ($("body").scrollTop() > 100 || $("html").scrollTop() > 100) {
-                if (Width > 767) {
-                    $("header").addClass("sticky");
-                }
-            } else {
-                $("header").removeClass("sticky");
-            }
-        });
+function showMenu() {
+    const openMenu = document.getElementsByClassName("offset-menu");
+    openMenu.classList.add("show");
+}
 
-        $('.container').imagesLoaded(function() {
-            $('.portfolio-cat-filter').on('click', 'button', function() {
-                var filterValue = $(this).attr('data-filter');
-                $grid.isotope({ filter: filterValue });
-            });
+document.getElementsById("offset-menu-close-btn").addEventListener("click", closeMenu);
 
-            var $grid = $('.grid').isotope({
-                itemSelector: '.grid-item',
-                percentPosition: true,
-                masonry: {
-                    columnWidth: '.grid-item'
-                }
-            });
-        });
+function closeMenu() {
+    const hideMenu = document.getElementsByClassName("offset-menu");
+    hideMenu.classList.remove("show");
+}
 
-        var catButton = '.portfolio-cat-filter button';
+let searchBtn = document.getElementsByClassName( 'search-btn' );
+searchBtn.addEventListener("click", searchToggle);
 
-        $(catButton).on('click', function(){
-            $(catButton).removeClass('active');
-            $(this).addClass('active');
-        });
+const searchShow = document.getElementsByClassName( 'search-box' );
+function searchToggle() {
+    searchShow.classList.toggle('show'); // Add or remove class
+}
 
+var hamburger = document.getElementById( 'hamburger' );
 
-        $('#hamburger').on('click', function() {            
-            $('.mobile-nav').addClass('show');
-            $('.overlay').addClass('active');
-        });
+hamburger.addEventListener("click", function(){
+    let mobileNav = document.getElementsByClassName("mobile-nav");
+    mobileNav.classList.add('show'); // Add class
+    let overlay = document.getElementsByClassName("overlay");
+    overlay.classList.add('active'); // Add class
+});
 
-        $('.close-nav').on('click', function() {            
-            $('.mobile-nav').removeClass('show');            
-            $('.overlay').removeClass('active');          
-        });
+var closeNav = document.getElementsByClassName( 'close-nav' );
 
-        $(".overlay").on("click", function () {
-            $(".mobile-nav").removeClass("show");
-            $('.overlay').removeClass('active');
-        });
-
-        $("#mobile-menu").metisMenu();
-
-        new WOW().init();
-
-        const counterUp = window.counterUp.default
-
-        const callback = entries => {
-            entries.forEach( entry => {
-                const el = entry.target
-                if ( entry.isIntersecting && ! el.classList.contains( 'is-visible' ) ) {
-                    counterUp( el, {
-                        duration: 3500,
-                        delay: 15,
-                    } )
-                    el.classList.add( 'is-visible' )
-                }
-            } )
-        }
-
-        const IO = new IntersectionObserver( callback, { threshold: 1 } )
-
-        const el = document.querySelectorAll( '.single-fun-fact span' );
-        el.forEach((el) => {
-            IO.observe(el);
-        });
-
-
-        $('.side-menu-toggle, .offcanvas-btn').on('click', function() {            
-            $('.offset-menu').addClass('show');
-        });
-
-        $('#offset-menu-close-btn').on('click', function() {            
-            $('.offset-menu').removeClass('show');
-        });
-
-        $('.search-btn').on('click', function() {            
-            $('.search-box').toggleClass('show');
-        });
-
-        
-    }); // end document ready function
-
-    function loader() {
-        $(window).on('load', function() {
-            // Animate loader off screen
-            $(".preloader").addClass('loaded');                    
-            $(".preloader").delay(600).fadeOut();                       
-        });
-    }
-    loader();
-
-})(jQuery); // End jQuery
+closeNav.addEventListener("click", function(){
+    let mobileNav = document.getElementsByClassName("mobile-nav");
+    mobileNav.classList.remove('show'); // Add class
+    let overlay = document.getElementsByClassName("overlay");
+    overlay.classList.remove('active'); // Add class
+});
