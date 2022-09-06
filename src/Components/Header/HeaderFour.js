@@ -71,7 +71,7 @@ const HeaderFour = () => {
                     <div className="d-inline-block ms-4 d-xl-none">
                         <div className="mobile-nav-wrap">                    
                             <div id="hamburger" onClick={handleMobileMenu}>
-                                <i className="fal fa-bars"></i>
+                                <i className="fal fa-bars text-white"></i>
                             </div>
                             <MobileMenu mobileMenu={mobileMenu} handleMobileMenu={handleMobileMenu} />
                         </div>
